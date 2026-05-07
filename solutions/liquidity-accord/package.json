@@ -1,0 +1,32 @@
+{
+  "name": "@liquidity-accord/monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Liquidity Accord — confidential performance bonds for market-makers and delisting insurance for token issuers, built on ReineiraOS",
+  "reineira": {
+    "platform": "0.1"
+  },
+  "scripts": {
+    "dev:backend": "pnpm --filter @liquidity-accord/backend run dev",
+    "dev:app": "pnpm --filter @liquidity-accord/app run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md}'",
+    "format:check": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.0"
+  },
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "license": "MIT",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

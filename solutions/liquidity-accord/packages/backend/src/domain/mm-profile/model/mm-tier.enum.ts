@@ -1,0 +1,7 @@
+export enum MMTier {
+  UNCERTIFIED = 'UNCERTIFIED',
+  BRONZE = 'BRONZE',
+  SILVER = 'SILVER',
+  GOLD = 'GOLD',
+  PLATINUM = 'PLATINUM',
+}

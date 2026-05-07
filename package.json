@@ -1,0 +1,32 @@
+{
+  "name": "reineira-os-examples",
+  "license": "MIT",
+  "private": true,
+  "description": "Reference examples for ReineiraOS — programmable payment protocols and plugins.",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "new-example": "plop example",
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx,mjs,cjs}": [
+      "prettier --write"
+    ],
+    "**/*.{json,md,mdx,css,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "plop": "^4.0.1",
+    "prettier": "^3.4.2"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

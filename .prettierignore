@@ -1,0 +1,27 @@
+node_modules
+.next
+.vercel
+out
+dist
+build
+public
+artifacts
+cache
+typechain-types
+deployments
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Solidity is handled by prettier-plugin-solidity in each example
+*.sol
+
+# Plop templates — Handlebars placeholders must not be reformatted
+plop-templates
+
+# Examples manage their own formatting (each may have its own prettier config + plugins)
+solutions/*/[a-z]*/
+starter/*/[a-z]*/
+**/.solhint.json

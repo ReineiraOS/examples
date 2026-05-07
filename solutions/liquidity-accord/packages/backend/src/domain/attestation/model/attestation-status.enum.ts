@@ -1,0 +1,7 @@
+export enum AttestationStatus {
+  PENDING = 'PENDING',
+  QUORUM_REACHED = 'QUORUM_REACHED',
+  FINALIZED = 'FINALIZED',
+  DISPUTED = 'DISPUTED',
+  REJECTED = 'REJECTED',
+}
