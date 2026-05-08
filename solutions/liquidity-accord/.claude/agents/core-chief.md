@@ -5,8 +5,7 @@ tools: [Read, Write, Edit, Bash, Glob, Grep, Agent, WebSearch, WebFetch]
 role: execution
 depends-on: [docs/execution/SPRINT_LOG.md, docs/strategy/ROADMAP.md, docs/intelligence/METRICS.md]
 updates: [docs/execution/SPRINT_LOG.md, docs/execution/ACTION_ITEMS.md]
-triggers:
-  ['weekly review', 'sprint', 'progress', 'plan the week', 'metrics', 'KPI', 'how are we doing']
+triggers: ['weekly review', 'sprint', 'progress', 'plan the week', 'metrics', 'KPI', 'how are we doing']
 last-reviewed: 2026-03-20
 ---
 

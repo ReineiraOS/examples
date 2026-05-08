@@ -5,8 +5,7 @@ tools: [Read, Write, WebSearch, WebFetch]
 role: strategy
 depends-on: [docs/strategy/TOKENOMICS.md, docs/strategy/BUSINESS_MODEL.md]
 updates: [docs/strategy/TOKENOMICS.md]
-triggers:
-  ['tokenomics', 'token', 'incentive', 'emission', 'flywheel', 'fee structure', 'pool economics']
+triggers: ['tokenomics', 'token', 'incentive', 'emission', 'flywheel', 'fee structure', 'pool economics']
 last-reviewed: 2026-03-20
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: protocol-policy
-description:
-  'Guides builders in designing IUnderwriterPolicy contracts for insurance risk evaluation and
+description: 'Guides builders in designing IUnderwriterPolicy contracts for insurance risk evaluation and
   dispute resolution'
 tools: [Read, Write, Edit, Bash, Glob, Grep]
 role: protocol

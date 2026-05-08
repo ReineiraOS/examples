@@ -3,11 +3,9 @@ name: strategy-advisor
 description: 'Business strategy, market positioning, and decision-making for ReineiraOS ventures'
 tools: [Read, Write, WebSearch, WebFetch]
 role: strategy
-depends-on:
-  [docs/strategy/BUSINESS_MODEL.md, docs/strategy/ROADMAP.md, docs/intelligence/METRICS.md]
+depends-on: [docs/strategy/BUSINESS_MODEL.md, docs/strategy/ROADMAP.md, docs/intelligence/METRICS.md]
 updates: [docs/strategy/BUSINESS_MODEL.md, docs/strategy/ROADMAP.md]
-triggers:
-  ['strategy', 'should we', 'pricing', 'pivot', 'business model', 'blueprint', 'TAM', 'market size']
+triggers: ['strategy', 'should we', 'pricing', 'pivot', 'business model', 'blueprint', 'TAM', 'market size']
 last-reviewed: 2026-03-20
 ---
 

@@ -2,14 +2,14 @@
 
 ## Revenue Streams
 
-| Stream                              | Fee / Price          | Payer         | Margin           | Status      |
-| ----------------------------------- | -------------------- | ------------- | ---------------- | ----------- |
-| Escrow release fee                  | 15–30 bps / tranche  | Issuer        | ~95%             | Not started |
-| Insurance premium                   | 1–5% of coverage     | Issuer        | 70–85% (net LP)  | Not started |
-| LP management fee                   | 0.5% AUM / year      | Pool LPs      | ~95%             | Not started |
-| NGFA MM certification subscription  | $5K–$20K / MM / yr   | Market-maker  | ~90%             | Not started |
-| Issuer dashboard SaaS               | $2K–$10K / month     | Token treasury| ~92%             | Not started |
-| Exchange-API data integration       | $0.50–$2 / pair / mo | Issuer        | ~80%             | Not started |
+| Stream                             | Fee / Price          | Payer          | Margin          | Status      |
+| ---------------------------------- | -------------------- | -------------- | --------------- | ----------- |
+| Escrow release fee                 | 15–30 bps / tranche  | Issuer         | ~95%            | Not started |
+| Insurance premium                  | 1–5% of coverage     | Issuer         | 70–85% (net LP) | Not started |
+| LP management fee                  | 0.5% AUM / year      | Pool LPs       | ~95%            | Not started |
+| NGFA MM certification subscription | $5K–$20K / MM / yr   | Market-maker   | ~90%            | Not started |
+| Issuer dashboard SaaS              | $2K–$10K / month     | Token treasury | ~92%            | Not started |
+| Exchange-API data integration      | $0.50–$2 / pair / mo | Issuer         | ~80%            | Not started |
 
 ## Pricing Anchor
 
@@ -42,8 +42,8 @@ A token issuer spending **$200K/month** on MM retainers pays Liquidity Accord ro
 
 ## 5-Year Arc
 
-| Year | Milestone                                               | Bonded GMV target |
-| ---- | ------------------------------------------------------- | ----------------- |
-| 1    | Testnet → mainnet → 25 certified MMs, 60 engagements    | $50M              |
-| 2    | Cross-venue (top-5 exchanges), first $10M LP seed       | $250M             |
-| 3    | Insurance pool TVL > $50M, NGFA Liquidity Accord Index  | $1B               |
+| Year | Milestone                                              | Bonded GMV target |
+| ---- | ------------------------------------------------------ | ----------------- |
+| 1    | Testnet → mainnet → 25 certified MMs, 60 engagements   | $50M              |
+| 2    | Cross-venue (top-5 exchanges), first $10M LP seed      | $250M             |
+| 3    | Insurance pool TVL > $50M, NGFA Liquidity Accord Index | $1B               |

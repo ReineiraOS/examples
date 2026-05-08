@@ -5,17 +5,7 @@ tools: [Read, Write, WebSearch, WebFetch]
 role: growth
 depends-on: [docs/growth/COMMUNITY_STRATEGY.md]
 updates: [docs/growth/COMMUNITY_STRATEGY.md]
-triggers:
-  [
-    'community',
-    'Discord',
-    'Telegram',
-    'developer relations',
-    'partnership',
-    'hackathon',
-    'bounty',
-    'grant',
-  ]
+triggers: ['community', 'Discord', 'Telegram', 'developer relations', 'partnership', 'hackathon', 'bounty', 'grant']
 last-reviewed: 2026-03-20
 ---
 

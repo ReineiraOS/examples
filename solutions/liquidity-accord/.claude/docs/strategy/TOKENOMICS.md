@@ -4,12 +4,12 @@
 
 Liquidity Accord plays **all four** ReineiraOS roles at different points in the stack.
 
-| Role             | Who plays it in Liquidity Accord                   | Revenue Mechanism                                          |
-| ---------------- | --------------------------------------------------- | ---------------------------------------------------------- |
-| Policy Builder   | NGFA (authors `DelistingInsurancePolicy`)           | Protocol share of premium revenue                          |
-| Pool Underwriter | NGFA-curated pools; later institutional LP          | Net premiums − claims − LP share                           |
-| LP Staker        | Institutional LPs (Phase 3+), later DAO treasuries  | Proportional share of net premiums (target 18–28% APY)     |
-| Operator         | Coordinator quorum (NGFA + partners) for attestation| Retainer + per-window fee (off-protocol, paid in USDC)     |
+| Role             | Who plays it in Liquidity Accord                     | Revenue Mechanism                                      |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------------------ |
+| Policy Builder   | NGFA (authors `DelistingInsurancePolicy`)            | Protocol share of premium revenue                      |
+| Pool Underwriter | NGFA-curated pools; later institutional LP           | Net premiums − claims − LP share                       |
+| LP Staker        | Institutional LPs (Phase 3+), later DAO treasuries   | Proportional share of net premiums (target 18–28% APY) |
+| Operator         | Coordinator quorum (NGFA + partners) for attestation | Retainer + per-window fee (off-protocol, paid in USDC) |
 
 ## Flywheel
 
@@ -31,13 +31,13 @@ The data moat is the defensible differentiator: NGFA's 300-pair performance hist
 
 ## Fee Structure
 
-| Fee                                | Rate                 | Who Pays      | Who Earns                             |
-| ---------------------------------- | -------------------- | ------------- | ------------------------------------- |
-| Escrow release                     | 15–30 bps / tranche  | Issuer        | Liquidity Accord (NGFA) + ReineiraOS  |
-| Insurance premium                  | 1–5% of coverage     | Issuer        | LP share + Liquidity Accord + Reineira|
-| LP management                      | 0.5% AUM / year      | Pool LP       | Liquidity Accord (pool operator)      |
-| MM certification subscription      | $5K–$20K / yr / MM   | Market-maker  | Liquidity Accord (off-protocol)       |
-| Issuer dashboard SaaS              | $2K–$10K / month     | Token treasury| Liquidity Accord (off-protocol)       |
+| Fee                           | Rate                | Who Pays       | Who Earns                              |
+| ----------------------------- | ------------------- | -------------- | -------------------------------------- |
+| Escrow release                | 15–30 bps / tranche | Issuer         | Liquidity Accord (NGFA) + ReineiraOS   |
+| Insurance premium             | 1–5% of coverage    | Issuer         | LP share + Liquidity Accord + Reineira |
+| LP management                 | 0.5% AUM / year     | Pool LP        | Liquidity Accord (pool operator)       |
+| MM certification subscription | $5K–$20K / yr / MM  | Market-maker   | Liquidity Accord (off-protocol)        |
+| Issuer dashboard SaaS         | $2K–$10K / month    | Token treasury | Liquidity Accord (off-protocol)        |
 
 ReineiraOS protocol-level fees apply identically to every builder — no preferential take for NGFA.
 

@@ -2,13 +2,13 @@
 
 ## Direct Competitors
 
-| Competitor                         | What They Do                                               | Weakness                                                               | Our Advantage                                                   |
-| ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
-| Offline MM contracts (status quo)  | Paper NDAs, monthly reports, self-attested volume          | No objective verification, 30–90d settle, wash-trading undetectable    | Time-weighted on-chain KPI score with Coordinator quorum        |
-| Wintermute, GSR, B2C2 dashboards   | Internal MM-controlled performance reports                 | MM reports on itself — issuer has no audit ring                        | Neutral third-party (NGFA + Coordinators) scores both sides     |
-| Kaiko / CoinAPI analytics          | Exchange-API data + liquidity analytics dashboards         | Pure data — doesn't settle or bond performance                         | Directly gates escrow release, with confidentiality preserved   |
-| Nexus Mutual (smart-contract cover) | Parametric DeFi coverage                                   | No delisting-specific product; no issuer/MM performance layer          | Purpose-built for delisting; NGFA risk model for pricing        |
-| Chaos Labs / Gauntlet risk advisory | Risk consulting, parameter tuning                          | Advisory only — no on-chain product                                    | Same-domain expertise plus a settled product                    |
+| Competitor                          | What They Do                                       | Weakness                                                            | Our Advantage                                                 |
+| ----------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Offline MM contracts (status quo)   | Paper NDAs, monthly reports, self-attested volume  | No objective verification, 30–90d settle, wash-trading undetectable | Time-weighted on-chain KPI score with Coordinator quorum      |
+| Wintermute, GSR, B2C2 dashboards    | Internal MM-controlled performance reports         | MM reports on itself — issuer has no audit ring                     | Neutral third-party (NGFA + Coordinators) scores both sides   |
+| Kaiko / CoinAPI analytics           | Exchange-API data + liquidity analytics dashboards | Pure data — doesn't settle or bond performance                      | Directly gates escrow release, with confidentiality preserved |
+| Nexus Mutual (smart-contract cover) | Parametric DeFi coverage                           | No delisting-specific product; no issuer/MM performance layer       | Purpose-built for delisting; NGFA risk model for pricing      |
+| Chaos Labs / Gauntlet risk advisory | Risk consulting, parameter tuning                  | Advisory only — no on-chain product                                 | Same-domain expertise plus a settled product                  |
 
 ## Indirect Competitors / Workarounds
 
@@ -18,14 +18,14 @@
 
 ## FHE Advantage
 
-| Feature                                   | Liquidity Accord | Offline MM contract | Pure-DeFi analytics |
-| ----------------------------------------- | ---------------- | ------------------- | ------------------- |
-| Confidential retainer amount              | Yes              | Yes (by NDA)        | No                  |
-| Verifiable KPI score                      | Yes              | No                  | Partial (no bond)   |
-| Auditable by issuer + MM + NGFA only      | Yes              | Yes                 | No (public)         |
-| Tranche-release settlement                | Yes              | Manual              | No                  |
-| Parametric delisting cover                | Yes              | No                  | Fragmented          |
-| Cross-venue via CCTP v2                   | Yes              | No                  | Partial             |
+| Feature                              | Liquidity Accord | Offline MM contract | Pure-DeFi analytics |
+| ------------------------------------ | ---------------- | ------------------- | ------------------- |
+| Confidential retainer amount         | Yes              | Yes (by NDA)        | No                  |
+| Verifiable KPI score                 | Yes              | No                  | Partial (no bond)   |
+| Auditable by issuer + MM + NGFA only | Yes              | Yes                 | No (public)         |
+| Tranche-release settlement           | Yes              | Manual              | No                  |
+| Parametric delisting cover           | Yes              | No                  | Fragmented          |
+| Cross-venue via CCTP v2              | Yes              | No                  | Partial             |
 
 ## Positioning
 

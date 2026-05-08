@@ -2,13 +2,13 @@
 
 ## Applicable Regulations
 
-| Regulation   | Applies? | Status      | Notes                                                                         |
-| ------------ | -------- | ----------- | ----------------------------------------------------------------------------- |
-| MiCA (EU)    | Yes      | Not started | Insurance leg may trigger CASP. Structure as parametric product — not traditional insurance licensing. |
-| AML / KYC    | Yes (light) | Not started | Counterparty KYB on MM side; issuer KYB via Circle / Fireblocks-assisted flow |
-| GDPR         | Yes      | Not started | Issuer + MM contact data + admin-user data stored in backend                  |
-| Travel Rule  | Possibly | Not started | Triggers on transfers > $1K to unhosted wallets — applicable only on fiat-leg, not escrow-leg |
-| Non-EU / parametric | Yes | Not started | Cayman / BVI structuring for delisting cover to non-EU issuers         |
+| Regulation          | Applies?    | Status      | Notes                                                                                                  |
+| ------------------- | ----------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| MiCA (EU)           | Yes         | Not started | Insurance leg may trigger CASP. Structure as parametric product — not traditional insurance licensing. |
+| AML / KYC           | Yes (light) | Not started | Counterparty KYB on MM side; issuer KYB via Circle / Fireblocks-assisted flow                          |
+| GDPR                | Yes         | Not started | Issuer + MM contact data + admin-user data stored in backend                                           |
+| Travel Rule         | Possibly    | Not started | Triggers on transfers > $1K to unhosted wallets — applicable only on fiat-leg, not escrow-leg          |
+| Non-EU / parametric | Yes         | Not started | Cayman / BVI structuring for delisting cover to non-EU issuers                                         |
 
 ## MiCA Checklist
 

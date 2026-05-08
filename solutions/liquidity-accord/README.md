@@ -31,10 +31,10 @@ Confidential performance bonds for market-makers and delisting insurance for tok
 
 ## Packages
 
-| Package            | Stack                                                     | Purpose                                                  |
-| ------------------ | --------------------------------------------------------- | -------------------------------------------------------- |
-| `packages/backend` | TypeScript, Clean Architecture, Vercel-ready              | KPI aggregator, engagements, attestations, MM registry   |
-| `packages/app`     | React 19 + Vite + Zustand + TanStack + ZeroDev passkeys   | Issuer / MM / NGFA-admin dashboards                      |
+| Package            | Stack                                                   | Purpose                                                |
+| ------------------ | ------------------------------------------------------- | ------------------------------------------------------ |
+| `packages/backend` | TypeScript, Clean Architecture, Vercel-ready            | KPI aggregator, engagements, attestations, MM registry |
+| `packages/app`     | React 19 + Vite + Zustand + TanStack + ZeroDev passkeys | Issuer / MM / NGFA-admin dashboards                    |
 
 Custom smart contracts (`LiquidityAccordResolver`, `DelistingInsurancePolicy`, `MMRegistry`) live in `../reineira-code/contracts/`.
 

@@ -28,15 +28,15 @@ template.
 
 ## Key Layers
 
-| Layer      | Path               | Purpose                                             |
-| ---------- | ------------------ | --------------------------------------------------- |
-| Routes     | `src/routes/`      | TanStack Router file-based, `_authenticated/` guard |
-| Stores     | `src/stores/`      | authStore, walletStore, transactionStore, etc.      |
-| Services   | `src/services/`    | Static async classes wrapping Axios                 |
-| Hooks      | `src/hooks/`       | useAuth, useBalance, useEscrowFlow, usePolling      |
-| Components | `src/components/`  | ui/ primitives + features/ business components      |
-| Providers  | `src/providers/`   | Wallet provider abstraction (ZeroDev, WalletConnect)|
-| Helpers    | `src/helpers/`     | Browser wrappers (Window)                           |
+| Layer      | Path              | Purpose                                              |
+| ---------- | ----------------- | ---------------------------------------------------- |
+| Routes     | `src/routes/`     | TanStack Router file-based, `_authenticated/` guard  |
+| Stores     | `src/stores/`     | authStore, walletStore, transactionStore, etc.       |
+| Services   | `src/services/`   | Static async classes wrapping Axios                  |
+| Hooks      | `src/hooks/`      | useAuth, useBalance, useEscrowFlow, usePolling       |
+| Components | `src/components/` | ui/ primitives + features/ business components       |
+| Providers  | `src/providers/`  | Wallet provider abstraction (ZeroDev, WalletConnect) |
+| Helpers    | `src/helpers/`    | Browser wrappers (Window)                            |
 
 ## Web3 Integration
 

@@ -23,7 +23,6 @@ concurrency:
 env:
   NODE_VERSION: '24'
 
-
 jobs:
   lint-and-format:
     name: Lint & Format

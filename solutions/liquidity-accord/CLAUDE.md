@@ -32,25 +32,25 @@ packages/
 
 ## Protocol Primitives Used
 
-| Primitive                      | Purpose                                               |
-| ------------------------------ | ----------------------------------------------------- |
-| ConfidentialEscrow             | Retainer custody (FHE-encrypted)                      |
-| LiquidityAccordResolver        | KPI-scored tranche release (in `reineira-code`)       |
-| ConfidentialCoverageManager    | Delisting insurance coverage                          |
-| DelistingInsurancePolicy       | Parametric cover policy (in `reineira-code`)          |
-| PoolFactory                    | LP-backed insurance pools                             |
-| Reclaim Verifier               | zkTLS proofs of exchange order-book snapshots         |
-| UMA Optimistic Oracle V3       | Delisting event dispute resolution                    |
-| CCTP v2                        | Multi-venue USDC / EURC settlement                    |
+| Primitive                   | Purpose                                         |
+| --------------------------- | ----------------------------------------------- |
+| ConfidentialEscrow          | Retainer custody (FHE-encrypted)                |
+| LiquidityAccordResolver     | KPI-scored tranche release (in `reineira-code`) |
+| ConfidentialCoverageManager | Delisting insurance coverage                    |
+| DelistingInsurancePolicy    | Parametric cover policy (in `reineira-code`)    |
+| PoolFactory                 | LP-backed insurance pools                       |
+| Reclaim Verifier            | zkTLS proofs of exchange order-book snapshots   |
+| UMA Optimistic Oracle V3    | Delisting event dispute resolution              |
+| CCTP v2                     | Multi-venue USDC / EURC settlement              |
 
 ## Verification Sources
 
-| Source          | What It Proves                                  |
-| --------------- | ----------------------------------------------- |
-| Reclaim zkTLS   | Exchange public order-book + trade-tape data    |
-| CoinAPI / Kaiko | Market data feed for aggregator                 |
-| UMA Oracle V3   | Delisting event / outcome resolution            |
-| Chainlink       | Token prices for risk scoring                   |
+| Source          | What It Proves                               |
+| --------------- | -------------------------------------------- |
+| Reclaim zkTLS   | Exchange public order-book + trade-tape data |
+| CoinAPI / Kaiko | Market data feed for aggregator              |
+| UMA Oracle V3   | Delisting event / outcome resolution         |
+| Chainlink       | Token prices for risk scoring                |
 
 ## Custom Data Entities (backend)
 
@@ -73,12 +73,12 @@ Existing protocol entities (Escrow, Coverage) stay as shipped by platform-module
 
 ## Ecosystem
 
-| Repo                  | Purpose                                         |
-| --------------------- | ----------------------------------------------- |
-| **liquidity-accord** (this repo) | App code (frontend + backend)        |
-| **reineira-atlas**    | Startup OS — strategy, ops, growth, compliance  |
-| **reineira-code**     | Custom resolvers/policies (LiquidityAccordResolver, DelistingInsurancePolicy) |
-| **platform-modules**  | Upstream template — pull updates from here      |
+| Repo                             | Purpose                                                                       |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| **liquidity-accord** (this repo) | App code (frontend + backend)                                                 |
+| **reineira-atlas**               | Startup OS — strategy, ops, growth, compliance                                |
+| **reineira-code**                | Custom resolvers/policies (LiquidityAccordResolver, DelistingInsurancePolicy) |
+| **platform-modules**             | Upstream template — pull updates from here                                    |
 
 ## Running Locally
 
@@ -94,11 +94,11 @@ Conventional Commits. Scopes: `backend`, `app`, `docs`, `ci`, `build`. Breaking 
 
 ## Agent Roles (see `.claude/agents/`)
 
-| Prefix       | Domain                                          |
-| ------------ | ----------------------------------------------- |
+| Prefix       | Domain                                                                       |
+| ------------ | ---------------------------------------------------------------------------- |
 | `protocol-*` | Resolver / policy design (LiquidityAccordResolver, DelistingInsurancePolicy) |
-| `product-*`  | Frontend + backend development                  |
-| `strategy-*` | Business model, pricing, pitch                  |
-| `growth-*`   | Community, content, NGFA partnerships           |
-| `legal-*`    | MiCA, AML/KYC, parametric insurance structuring |
-| `core-*`     | Orchestration, sprint planning                  |
+| `product-*`  | Frontend + backend development                                               |
+| `strategy-*` | Business model, pricing, pitch                                               |
+| `growth-*`   | Community, content, NGFA partnerships                                        |
+| `legal-*`    | MiCA, AML/KYC, parametric insurance structuring                              |
+| `core-*`     | Orchestration, sprint planning                                               |
