@@ -50,9 +50,9 @@
 
 ## Go / No-Go Gates
 
-| Gate        | Criteria                                                                | Status      |
-| ----------- | ----------------------------------------------------------------------- | ----------- |
-| Phase 0 → 1 | Resolver + policy pass full test suite; audit scoped                    | Not started |
-| Phase 1 → 2 | 3 pilots redeemed end-to-end on testnet; < 3% dispute rate; audit pass  | Not started |
-| Phase 2 → 3 | Mainnet stable 30 days; $5M+ bonded retainer GMV; no critical bugs       | Not started |
-| Phase 3 → 4 | $5M LP seeded; 5+ policies written; first payout event handled cleanly  | Not started |
+| Gate        | Criteria                                                               | Status      |
+| ----------- | ---------------------------------------------------------------------- | ----------- |
+| Phase 0 → 1 | Resolver + policy pass full test suite; audit scoped                   | Not started |
+| Phase 1 → 2 | 3 pilots redeemed end-to-end on testnet; < 3% dispute rate; audit pass | Not started |
+| Phase 2 → 3 | Mainnet stable 30 days; $5M+ bonded retainer GMV; no critical bugs     | Not started |
+| Phase 3 → 4 | $5M LP seeded; 5+ policies written; first payout event handled cleanly | Not started |

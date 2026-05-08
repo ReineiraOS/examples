@@ -2,19 +2,19 @@
 
 ## Primitives Used
 
-| Primitive                            | Used | Purpose                                                   |
-| ------------------------------------ | ---- | --------------------------------------------------------- |
-| ConfidentialEscrow                   | Yes  | Retainer custody — monthly MM tranche, FHE-encrypted      |
-| LiquidityAccordResolver (custom)     | Yes  | KPI-scored release — in `reineira-code/contracts/resolvers/` |
-| ConfidentialCoverageManager          | Yes  | Delisting insurance coverage lifecycle                    |
-| DelistingInsurancePolicy (custom)    | Yes  | FHE premium + UMA judge — in `reineira-code/contracts/policies/` |
-| PoolFactory                          | Yes  | LP-backed pool for delisting coverage                     |
-| MMRegistry (custom, TBD)             | Yes  | NGFA-certified MM directory on-chain                      |
-| TrustedForwarder (ERC-2771)          | Yes  | Gasless issuer / MM UX                                    |
-| Reclaim Verifier                     | Yes  | zkTLS proof of exchange-API KPI snapshots                 |
-| UMA Optimistic Oracle V3             | Yes  | Delisting event dispute resolution                        |
-| Chainlink feeds                      | Yes  | Token price for risk scoring                              |
-| CCTP v2                              | Yes (Phase 4) | Multi-venue settlement                           |
+| Primitive                         | Used          | Purpose                                                          |
+| --------------------------------- | ------------- | ---------------------------------------------------------------- |
+| ConfidentialEscrow                | Yes           | Retainer custody — monthly MM tranche, FHE-encrypted             |
+| LiquidityAccordResolver (custom)  | Yes           | KPI-scored release — in `reineira-code/contracts/resolvers/`     |
+| ConfidentialCoverageManager       | Yes           | Delisting insurance coverage lifecycle                           |
+| DelistingInsurancePolicy (custom) | Yes           | FHE premium + UMA judge — in `reineira-code/contracts/policies/` |
+| PoolFactory                       | Yes           | LP-backed pool for delisting coverage                            |
+| MMRegistry (custom, TBD)          | Yes           | NGFA-certified MM directory on-chain                             |
+| TrustedForwarder (ERC-2771)       | Yes           | Gasless issuer / MM UX                                           |
+| Reclaim Verifier                  | Yes           | zkTLS proof of exchange-API KPI snapshots                        |
+| UMA Optimistic Oracle V3          | Yes           | Delisting event dispute resolution                               |
+| Chainlink feeds                   | Yes           | Token price for risk scoring                                     |
+| CCTP v2                           | Yes (Phase 4) | Multi-venue settlement                                           |
 
 ## Contract Addresses
 
@@ -94,7 +94,7 @@ await sdk.initialize();
 // Create retainer escrow
 const escrow = await sdk.escrow
   .build()
-  .amount(sdk.stablecoin(50_000))                // 50K USDC retainer tranche
+  .amount(sdk.stablecoin(50_000)) // 50K USDC retainer tranche
   .owner(mmWalletAddress)
   .condition(liquidityAccordResolverAddress, encodedEngagementId)
   .create();

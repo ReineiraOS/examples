@@ -29,31 +29,31 @@ See `.claude/docs/strategy/ROADMAP.md` and `.claude/docs/execution/ACTION_ITEMS.
 
 ### The Ecosystem
 
-| Repo                 | Role                                                                               |
-| -------------------- | ---------------------------------------------------------------------------------- |
-| **liquidity-accord** (here) | App code — backend KPI aggregator, issuer / MM / admin dashboards           |
-| **reineira-atlas**   | Startup OS (strategy, ops, growth, pitch) — this Atlas is the template the venture was forked from; the venture's own `.claude/` is here |
-| **reineira-code**    | Custom Solidity: `LiquidityAccordResolver`, `DelistingInsurancePolicy`, `MMRegistry` |
-| **platform-modules** | Upstream scaffold — pull template updates from here                                |
+| Repo                        | Role                                                                                                                                     |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **liquidity-accord** (here) | App code — backend KPI aggregator, issuer / MM / admin dashboards                                                                        |
+| **reineira-atlas**          | Startup OS (strategy, ops, growth, pitch) — this Atlas is the template the venture was forked from; the venture's own `.claude/` is here |
+| **reineira-code**           | Custom Solidity: `LiquidityAccordResolver`, `DelistingInsurancePolicy`, `MMRegistry`                                                     |
+| **platform-modules**        | Upstream scaffold — pull template updates from here                                                                                      |
 
 ### Protocol Stack (5 layers)
 
-| Layer          | What It Does                                           | Who Owns It                                             |
-| -------------- | ------------------------------------------------------ | ------------------------------------------------------- |
-| Application    | Issuer / MM / admin dashboards                         | Liquidity Accord (this repo)                            |
-| Plugin         | `LiquidityAccordResolver`, `DelistingInsurancePolicy`, `MMRegistry` | Liquidity Accord (in `reineira-code`)           |
-| Protocol       | ConfidentialEscrow, CoverageManager, PoolFactory       | ReineiraOS                                              |
-| Infrastructure | Coordinator network (NGFA + partners), CCTP relay      | Liquidity Accord operates Coordinator quorum; CCTP external |
-| Settlement     | Arbitrum L2, Fhenix CoFHE, Circle CCTP V2              | External protocols                                      |
+| Layer          | What It Does                                                        | Who Owns It                                                 |
+| -------------- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Application    | Issuer / MM / admin dashboards                                      | Liquidity Accord (this repo)                                |
+| Plugin         | `LiquidityAccordResolver`, `DelistingInsurancePolicy`, `MMRegistry` | Liquidity Accord (in `reineira-code`)                       |
+| Protocol       | ConfidentialEscrow, CoverageManager, PoolFactory                    | ReineiraOS                                                  |
+| Infrastructure | Coordinator network (NGFA + partners), CCTP relay                   | Liquidity Accord operates Coordinator quorum; CCTP external |
+| Settlement     | Arbitrum L2, Fhenix CoFHE, Circle CCTP V2                           | External protocols                                          |
 
 ### Open Economy Roles — Liquidity Accord plays all four
 
-| Role             | How it shows up here                                  | Revenue                                           |
-| ---------------- | ----------------------------------------------------- | ------------------------------------------------- |
-| Policy Builder   | NGFA authors `DelistingInsurancePolicy`               | Share of premium revenue                          |
-| Pool Underwriter | NGFA-curated pools; later institutional LP            | Net premiums − claims − LP share                  |
-| LP Staker        | Institutional LPs (Phase 3+)                          | 18–28% net premium APY target                     |
-| Operator         | Coordinator quorum (NGFA + partners) — attestation    | Per-window retainer fee                           |
+| Role             | How it shows up here                               | Revenue                          |
+| ---------------- | -------------------------------------------------- | -------------------------------- |
+| Policy Builder   | NGFA authors `DelistingInsurancePolicy`            | Share of premium revenue         |
+| Pool Underwriter | NGFA-curated pools; later institutional LP         | Net premiums − claims − LP share |
+| LP Staker        | Institutional LPs (Phase 3+)                       | 18–28% net premium APY target    |
+| Operator         | Coordinator quorum (NGFA + partners) — attestation | Per-window retainer fee          |
 
 ---
 
@@ -107,13 +107,13 @@ liquidity-accord/
 
 ### Cross-Reference Syntax
 
-| Syntax                     | Resolves To                                          |
-| -------------------------- | ---------------------------------------------------- |
-| `@doc:TOKENOMICS`          | `.claude/docs/strategy/TOKENOMICS.md`                |
-| `@doc:METRICS`             | `.claude/docs/intelligence/METRICS.md`               |
-| `@doc:PROTOCOL_INTEGRATION`| `.claude/docs/product/PROTOCOL_INTEGRATION.md`       |
-| `@agent:protocol-resolver` | `.claude/agents/protocol-resolver.md`                |
-| `@data:decisions`          | `.claude/data/decisions/`                            |
+| Syntax                      | Resolves To                                    |
+| --------------------------- | ---------------------------------------------- |
+| `@doc:TOKENOMICS`           | `.claude/docs/strategy/TOKENOMICS.md`          |
+| `@doc:METRICS`              | `.claude/docs/intelligence/METRICS.md`         |
+| `@doc:PROTOCOL_INTEGRATION` | `.claude/docs/product/PROTOCOL_INTEGRATION.md` |
+| `@agent:protocol-resolver`  | `.claude/agents/protocol-resolver.md`          |
+| `@data:decisions`           | `.claude/data/decisions/`                      |
 
 ---
 
@@ -141,21 +141,21 @@ See `agents/_dispatch.md`.
 
 ## 6. Current Key Numbers
 
-| Metric           | Value                             | Source          |
-| ---------------- | --------------------------------- | --------------- |
-| Stage            | Idea → Testnet MVP                | brief.md §1     |
-| Testnet target   | May 2026                          | brief.md §6     |
-| Mainnet target   | Jul 2026                          | brief.md §6     |
-| Budget envelope  | $150–250K (Phase 0–1)             | brief.md §6     |
-| Team             | Lance de Hoog (MD) + Alex Smith (CTO) + ReineiraOS advisory | brief.md §5 |
-| Protocol         | ReineiraOS on Arbitrum Sepolia    | brief.md §3     |
-| Settlement       | Stablecoin-agnostic (IFHERC20)    | Protocol        |
-| Wallet (humans)  | ZeroDev (ERC-4337 + passkeys)     | brief.md §3     |
-| Wallet (treasuries) | Safe multisig                  | brief.md §6     |
-| Encryption       | Fhenix CoFHE                      | Protocol        |
-| 12-month GMV     | $50M bonded retainer volume target | brief.md §4    |
-| 12-month coverage | $30M notional delisting cover     | brief.md §4     |
-| 12-month certified MMs | 25                          | brief.md §4     |
+| Metric                 | Value                                                       | Source      |
+| ---------------------- | ----------------------------------------------------------- | ----------- |
+| Stage                  | Idea → Testnet MVP                                          | brief.md §1 |
+| Testnet target         | May 2026                                                    | brief.md §6 |
+| Mainnet target         | Jul 2026                                                    | brief.md §6 |
+| Budget envelope        | $150–250K (Phase 0–1)                                       | brief.md §6 |
+| Team                   | Lance de Hoog (MD) + Alex Smith (CTO) + ReineiraOS advisory | brief.md §5 |
+| Protocol               | ReineiraOS on Arbitrum Sepolia                              | brief.md §3 |
+| Settlement             | Stablecoin-agnostic (IFHERC20)                              | Protocol    |
+| Wallet (humans)        | ZeroDev (ERC-4337 + passkeys)                               | brief.md §3 |
+| Wallet (treasuries)    | Safe multisig                                               | brief.md §6 |
+| Encryption             | Fhenix CoFHE                                                | Protocol    |
+| 12-month GMV           | $50M bonded retainer volume target                          | brief.md §4 |
+| 12-month coverage      | $30M notional delisting cover                               | brief.md §4 |
+| 12-month certified MMs | 25                                                          | brief.md §4 |
 
 ---
 

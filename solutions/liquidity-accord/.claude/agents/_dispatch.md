@@ -48,7 +48,7 @@ last-reviewed: 2026-03-20
 | Prompt Signal                                                         | Primary Agent        | Support             | Docs Loaded                              |
 | --------------------------------------------------------------------- | -------------------- | ------------------- | ---------------------------------------- |
 | "frontend", "component", "page", "UI", "React", "Zustand"             | `product-frontend`   | —                   | ARCHITECTURE.md                          |
-| "backend", "API", "endpoint", "Vercel", "use case"                     | `product-backend`    | —                   | ARCHITECTURE.md                          |
+| "backend", "API", "endpoint", "Vercel", "use case"                    | `product-backend`    | —                   | ARCHITECTURE.md                          |
 | "integrate", "wire up", "connect", "SDK", "escrow flow", "end-to-end" | `product-integrator` | `protocol-resolver` | PROTOCOL_INTEGRATION.md, ARCHITECTURE.md |
 | "design", "mockup", "UX", "branding"                                  | `product-frontend`   | —                   | ARCHITECTURE.md                          |
 

@@ -6,10 +6,10 @@ Repository: **[github.com/ReineiraOS/examples](https://github.com/ReineiraOS/exa
 
 ## Categories
 
-| Folder                          | Purpose                                                  |
-| ------------------------------- | -------------------------------------------------------- |
-| [`solutions/`](./solutions)     | Full reference implementations and end-to-end solutions  |
-| [`starter/`](./starter)         | Minimal templates to bootstrap your own example          |
+| Folder                      | Purpose                                                 |
+| --------------------------- | ------------------------------------------------------- |
+| [`solutions/`](./solutions) | Full reference implementations and end-to-end solutions |
+| [`starter/`](./starter)     | Minimal templates to bootstrap your own example         |
 
 Each example is a self-contained project with its own `package.json` and lockfile.
 

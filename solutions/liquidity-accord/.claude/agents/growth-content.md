@@ -5,18 +5,7 @@ tools: [Read, Write, WebSearch, WebFetch]
 role: growth
 depends-on: [docs/growth/COMMUNITY_STRATEGY.md]
 updates: []
-triggers:
-  [
-    'blog',
-    'article',
-    'tutorial',
-    'guide',
-    'Twitter',
-    'Farcaster',
-    'thread',
-    'social',
-    'documentation',
-  ]
+triggers: ['blog', 'article', 'tutorial', 'guide', 'Twitter', 'Farcaster', 'thread', 'social', 'documentation']
 last-reviewed: 2026-03-20
 ---
 

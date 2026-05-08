@@ -3,8 +3,7 @@ name: strategy-pitch
 description: 'Investor prep, pitch materials, and fund intro readiness for ReineiraOS ventures'
 tools: [Read, Write, WebSearch, WebFetch]
 role: strategy
-depends-on:
-  [docs/strategy/BUSINESS_MODEL.md, docs/strategy/ROADMAP.md, docs/intelligence/METRICS.md]
+depends-on: [docs/strategy/BUSINESS_MODEL.md, docs/strategy/ROADMAP.md, docs/intelligence/METRICS.md]
 updates: []
 triggers: ['pitch', 'investor', 'fundraise', 'deck', 'fund intro']
 last-reviewed: 2026-03-20

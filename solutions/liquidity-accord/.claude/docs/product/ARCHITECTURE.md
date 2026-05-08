@@ -2,27 +2,27 @@
 
 ## Ecosystem
 
-| Repo                         | Stack                                                 | Purpose                                                                 |
-| ---------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------- |
-| **liquidity-accord** (here)  | pnpm monorepo (backend + app)                         | Issuer / MM / NGFA-admin application                                    |
-| **reineira-atlas**           | Markdown + Claude agents                              | Startup OS for Liquidity Accord                                         |
-| **reineira-code**            | Hardhat + Solidity + cofhejs                          | Custom resolver (`LiquidityAccordResolver`), policy (`DelistingInsurancePolicy`), registry (`MMRegistry`) |
-| **platform-modules**         | upstream template                                     | Pulls — backend starter, app starter                                    |
+| Repo                        | Stack                         | Purpose                                                                                                   |
+| --------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **liquidity-accord** (here) | pnpm monorepo (backend + app) | Issuer / MM / NGFA-admin application                                                                      |
+| **reineira-atlas**          | Markdown + Claude agents      | Startup OS for Liquidity Accord                                                                           |
+| **reineira-code**           | Hardhat + Solidity + cofhejs  | Custom resolver (`LiquidityAccordResolver`), policy (`DelistingInsurancePolicy`), registry (`MMRegistry`) |
+| **platform-modules**        | upstream template             | Pulls — backend starter, app starter                                                                      |
 
 ## Tech Stack
 
-| Layer            | Technology                                                          | Purpose                                                   |
-| ---------------- | ------------------------------------------------------------------- | --------------------------------------------------------- |
-| Contracts        | Solidity ^0.8.24 + Hardhat + cofhejs                                | Resolver, policy, registry                                |
-| Frontend         | React 19 + TypeScript + Vite + Zustand + TanStack Router + Tailwind | Issuer / MM / admin dashboards                            |
-| Backend          | TypeScript + Clean Architecture (Vercel-ready, DB-agnostic)         | KPI aggregator, Coordinator interface, exchange adapters  |
-| Wallet (humans)  | ZeroDev — ERC-4337 smart accounts + passkeys                        | Issuer + MM counterparties                                |
-| Wallet (treasuries) | Safe multisig                                                    | Issuer token treasuries                                   |
-| Encryption       | Fhenix CoFHE                                                        | Retainer amounts, premiums, risk scores                   |
-| Settlement       | Stablecoin-agnostic via `IFHERC20`                                  | USDC primary, EURC for EU                                 |
-| Cross-venue      | Circle CCTP v2                                                      | Multi-exchange USDC moves                                 |
-| Verification     | Reclaim zkTLS (exchange APIs), Chainlink (prices), UMA OOv3 (dispute) | KPI attestation + dispute resolution                    |
-| Deploy           | Hardhat (contracts), Vercel (apps)                                  | Infrastructure                                            |
+| Layer               | Technology                                                            | Purpose                                                  |
+| ------------------- | --------------------------------------------------------------------- | -------------------------------------------------------- |
+| Contracts           | Solidity ^0.8.24 + Hardhat + cofhejs                                  | Resolver, policy, registry                               |
+| Frontend            | React 19 + TypeScript + Vite + Zustand + TanStack Router + Tailwind   | Issuer / MM / admin dashboards                           |
+| Backend             | TypeScript + Clean Architecture (Vercel-ready, DB-agnostic)           | KPI aggregator, Coordinator interface, exchange adapters |
+| Wallet (humans)     | ZeroDev — ERC-4337 smart accounts + passkeys                          | Issuer + MM counterparties                               |
+| Wallet (treasuries) | Safe multisig                                                         | Issuer token treasuries                                  |
+| Encryption          | Fhenix CoFHE                                                          | Retainer amounts, premiums, risk scores                  |
+| Settlement          | Stablecoin-agnostic via `IFHERC20`                                    | USDC primary, EURC for EU                                |
+| Cross-venue         | Circle CCTP v2                                                        | Multi-exchange USDC moves                                |
+| Verification        | Reclaim zkTLS (exchange APIs), Chainlink (prices), UMA OOv3 (dispute) | KPI attestation + dispute resolution                     |
+| Deploy              | Hardhat (contracts), Vercel (apps)                                    | Infrastructure                                           |
 
 ## System Diagram
 
@@ -50,13 +50,13 @@ graph TD
 
 ## Data Entities (backend custom — on top of platform-modules escrow/withdrawal/profile)
 
-| Entity      | Plaintext / Encrypted                 | Key Fields                                                                         |
-| ----------- | ------------------------------------- | ---------------------------------------------------------------------------------- |
-| Engagement  | Plaintext                             | id, issuer, mm, venue, pairSymbol, kpiConfigHash, startDate, endDate, status       |
-| Attestation | Plaintext (refers to encrypted data)  | id, engagementId, windowStart, windowEnd, kpiSnapshotHash, coordinatorSigs, score  |
-| MMProfile   | Plaintext                             | id, operatorAddress, name, tier, certifiedSince, certificationExpiry, pairs, kpis  |
-| Escrow      | Encrypted amount (FHE)                | Inherited from platform-modules; refers to engagementId                            |
-| Coverage    | Encrypted (premium, risk, dispute)    | Inherited from platform-modules; refers to engagementId + venue                    |
+| Entity      | Plaintext / Encrypted                | Key Fields                                                                        |
+| ----------- | ------------------------------------ | --------------------------------------------------------------------------------- |
+| Engagement  | Plaintext                            | id, issuer, mm, venue, pairSymbol, kpiConfigHash, startDate, endDate, status      |
+| Attestation | Plaintext (refers to encrypted data) | id, engagementId, windowStart, windowEnd, kpiSnapshotHash, coordinatorSigs, score |
+| MMProfile   | Plaintext                            | id, operatorAddress, name, tier, certifiedSince, certificationExpiry, pairs, kpis |
+| Escrow      | Encrypted amount (FHE)               | Inherited from platform-modules; refers to engagementId                           |
+| Coverage    | Encrypted (premium, risk, dispute)   | Inherited from platform-modules; refers to engagementId + venue                   |
 
 ## Running Locally
 

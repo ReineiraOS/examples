@@ -29,17 +29,17 @@ Each example's `README.md` starts with YAML frontmatter:
 
 ```yaml
 ---
-title: Liquidity Accord            # required, human-readable
-slug: liquidity-accord             # required, kebab-case (matches directory name)
-description: One-line summary…     # required
-framework: monorepo                # required: nextjs | hono | hardhat | foundry | monorepo | other
-type: defi-protocol                # required: dapp | api | sdk | defi-protocol | solidity-contracts | other
-tags: [defi, fhe, arbitrum]        # required, lowercase array
-demoUrl: null                      # optional, live demo URL
-image: null                        # optional, og:image path relative to example
-author: NextGen Financial Analytics  # optional
-dateAdded: 2026-05-07              # optional, ISO date
-repoPath: solutions/liquidity-accord  # required, path from repo root
+title: Liquidity Accord # required, human-readable
+slug: liquidity-accord # required, kebab-case (matches directory name)
+description: One-line summary… # required
+framework: monorepo # required: nextjs | hono | hardhat | foundry | monorepo | other
+type: defi-protocol # required: dapp | api | sdk | defi-protocol | solidity-contracts | other
+tags: [defi, fhe, arbitrum] # required, lowercase array
+demoUrl: null # optional, live demo URL
+image: null # optional, og:image path relative to example
+author: NextGen Financial Analytics # optional
+dateAdded: 2026-05-07 # optional, ISO date
+repoPath: solutions/liquidity-accord # required, path from repo root
 ---
 ```
 

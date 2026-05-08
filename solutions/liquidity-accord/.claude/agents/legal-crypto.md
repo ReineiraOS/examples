@@ -5,8 +5,7 @@ tools: [Read, Write, WebSearch, WebFetch]
 role: legal
 depends-on: [docs/legal/COMPLIANCE.md]
 updates: [docs/legal/COMPLIANCE.md]
-triggers:
-  ['compliance', 'MiCA', 'AML', 'KYC', 'regulation', 'terms', 'privacy policy', 'legal', 'audit']
+triggers: ['compliance', 'MiCA', 'AML', 'KYC', 'regulation', 'terms', 'privacy policy', 'legal', 'audit']
 last-reviewed: 2026-03-20
 ---
 

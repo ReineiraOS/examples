@@ -1,7 +1,6 @@
 ---
 name: protocol-resolver
-description:
-  'Guides builders in designing IConditionResolver contracts for escrow release conditions'
+description: 'Guides builders in designing IConditionResolver contracts for escrow release conditions'
 tools: [Read, Write, Edit, Bash, Glob, Grep]
 role: protocol
 depends-on: [docs/product/PROTOCOL_INTEGRATION.md, docs/product/ARCHITECTURE.md]
