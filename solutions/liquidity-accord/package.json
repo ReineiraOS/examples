@@ -9,6 +9,7 @@
   "scripts": {
     "dev:backend": "pnpm --filter @liquidity-accord/backend run dev",
     "dev:app": "pnpm --filter @liquidity-accord/app run dev",
+    "dev:landing": "pnpm --filter @liquidity-accord/landing run dev",
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
     "lint": "pnpm -r run lint",
