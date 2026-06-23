@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.next/
+.vercel/
+coverage/
+*.tsbuildinfo
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Local runtime state (demo agents) — contains private keys
+.agent-store.json
+.agent-store.json.*
+.session-store.json
+
+# OS
+.DS_Store
+Thumbs.db
