@@ -5,6 +5,21 @@
   "description": "Agentic x402 payments settled through on-chain escrow with optional insurance — autonomous buyer and seller agents moving real USDC on Arbitrum Sepolia, built on ReineiraOS.",
   "type": "example",
   "owner": "ReineiraOS",
+  "demoUrl": "https://x402.reineira.xyz",
+  "tags": [
+    "x402",
+    "payments",
+    "escrow",
+    "insurance",
+    "agents",
+    "ai",
+    "arbitrum",
+    "fhe",
+    "fhenix",
+    "erc4337",
+    "rss"
+  ],
+  "dateAdded": "2026-06-23",
   "packages": {
     "demo": "@x402-insured-settlement/demo",
     "facilitator-web": "@x402-insured-settlement/facilitator-web"

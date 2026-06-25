@@ -1,24 +1,13 @@
----
-title: x402 Insured Settlement
-slug: x402-insured-settlement
-description: Agentic x402 payments settled through on-chain escrow with optional insurance — autonomous buyer and seller agents moving real USDC on Arbitrum Sepolia, built on ReineiraOS.
-framework: monorepo
-type: dapp
-tags: [x402, payments, escrow, insurance, agents, ai, arbitrum, fhe, fhenix, erc4337, rss]
-demoUrl: null
-image: null
-author: ReineiraOS
-dateAdded: 2026-06-23
-repoPath: solutions/x402-insured-settlement
----
-
 # x402 Insured Settlement
 
 [![Platform](https://img.shields.io/badge/ReineiraOS-v0.1-blue)](https://reineira.xyz)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Live demo](https://img.shields.io/badge/%E2%96%B6%20live%20demo-x402.reineira.xyz-000000)](https://x402.reineira.xyz)
 [![Buildathon](https://img.shields.io/badge/%F0%9F%8F%86%201st%20place-Agentic%20track-FACC15)](https://arbitrum-london.hackquest.io/buildathons/Arbitrum-Open-House-London-Online-Buildathon)
 
 > 🏆 **1st place — Agentic track**, [Arbitrum Open House London Online Buildathon](https://arbitrum-london.hackquest.io/buildathons/Arbitrum-Open-House-London-Online-Buildathon) (2026) — [announcement](https://x.com/arbitrum/status/2069113449221910953).
+
+**▶ Live demo: [x402.reineira.xyz](https://x402.reineira.xyz)**
 
 Autonomous AI agents that pay each other for real resources — settled on-chain
 through an x402 → escrow rail with optional insurance coverage and claims. A
