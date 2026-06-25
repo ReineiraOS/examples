@@ -1,5 +1,6 @@
 import type { AttestationResponse } from '@/services/AttestationService';
 import { Badge } from '@/components/ui/badge';
+import { CopyableId } from '@/components/ui/copyable-id';
 import { Skeleton } from '@/components/ui/skeleton';
 
 interface AttestationListProps {
@@ -33,6 +34,7 @@ export function AttestationList({ attestations, loading }: AttestationListProps)
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-[var(--border-dark)] text-[var(--text-muted)] uppercase text-xs tracking-wider">
+              <th className="pb-3 pr-4 font-medium">ID</th>
               <th className="pb-3 pr-4 font-medium">Engagement</th>
               <th className="pb-3 pr-4 font-medium">Window</th>
               <th className="pb-3 pr-4 font-medium">Spread</th>
@@ -45,8 +47,11 @@ export function AttestationList({ attestations, loading }: AttestationListProps)
           <tbody>
             {attestations.map((a) => (
               <tr key={a.public_id} className="border-b border-[var(--border-dark)] last:border-0">
-                <td className="py-3 pr-4 font-mono text-xs text-[var(--text-primary)]">
-                  {truncate(a.engagement_public_id, 14)}
+                <td className="py-3 pr-4">
+                  <CopyableId value={a.public_id} />
+                </td>
+                <td className="py-3 pr-4">
+                  <CopyableId value={a.engagement_public_id} max={14} />
                 </td>
                 <td className="py-3 pr-4 text-[var(--text-secondary)]">
                   {formatDate(a.window_start)} → {formatDate(a.window_end)}

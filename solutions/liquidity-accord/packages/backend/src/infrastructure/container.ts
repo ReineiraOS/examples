@@ -11,6 +11,11 @@ import {
   MemoryAttestationRepository,
   MemoryMMProfileRepository,
 } from './repository/memory/index.js';
+import {
+  PostgresNonceRepository,
+  PostgresUserRepository,
+  PostgresSessionRepository,
+} from './repository/postgres/index.js';
 import { JwtService } from './auth/jwt.service.js';
 import { NonceService } from './auth/nonce.service.js';
 import { SiweVerifier } from './auth/siwe-verifier.js';
@@ -18,9 +23,13 @@ import { FheService } from './fhe/fhe.service.js';
 import { QuickNodeVerifier } from './webhook/quicknode-verifier.js';
 import { getEnv } from '../core/config.js';
 
-const nonceRepo = new MemoryNonceRepository();
-const userRepo = new MemoryUserRepository();
-const sessionRepo = new MemorySessionRepository();
+const usePostgres = getEnv().DB_PROVIDER === 'postgres';
+
+const nonceRepo = usePostgres ? new PostgresNonceRepository() : new MemoryNonceRepository();
+const userRepo = usePostgres ? new PostgresUserRepository() : new MemoryUserRepository();
+const sessionRepo = usePostgres
+  ? new PostgresSessionRepository()
+  : new MemorySessionRepository();
 const escrowRepo = new MemoryEscrowRepository();
 const withdrawalRepo = new MemoryWithdrawalRepository();
 const businessProfileRepo = new MemoryBusinessProfileRepository();

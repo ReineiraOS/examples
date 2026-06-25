@@ -9,26 +9,34 @@ function resolveOrigin(requestOrigin: string | undefined): string {
   try {
     allowedRaw = getEnv().ALLOWED_ORIGINS;
   } catch {
-    return '*';
+    return requestOrigin ?? '*';
   }
 
   if (allowedRaw === '*') {
-    return '*';
+    return requestOrigin ?? '*';
   }
 
-  const allowed = allowedRaw.split(',').map((o) => o.trim());
+  const allowed = allowedRaw
+    .split(/[,\s]+/)
+    .map((o) => o.trim())
+    .filter((o) => o.length > 0);
 
   if (requestOrigin && allowed.includes(requestOrigin)) {
     return requestOrigin;
   }
 
-  return allowed[0] ?? '*';
+  return allowed[0] ?? requestOrigin ?? '*';
 }
 
 function setCorsHeaders(res: VercelResponse, origin: string): void {
   res.setHeader('Access-Control-Allow-Origin', origin);
+  res.setHeader('Vary', 'Origin');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Content-Type, Authorization, X-Idempotency-Key, X-Wallet-Provider',
+  );
   res.setHeader('Access-Control-Max-Age', '86400');
 }
 
