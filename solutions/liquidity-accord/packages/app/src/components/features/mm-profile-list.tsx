@@ -1,5 +1,6 @@
 import type { MMProfileResponse } from '@/services/MMProfileService';
 import { Badge } from '@/components/ui/badge';
+import { CopyableId } from '@/components/ui/copyable-id';
 import { Skeleton } from '@/components/ui/skeleton';
 
 interface MMProfileListProps {
@@ -29,6 +30,7 @@ export function MMProfileList({ profiles, loading }: MMProfileListProps) {
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-[var(--border-dark)] text-[var(--text-muted)] uppercase text-xs tracking-wider">
+              <th className="pb-3 pr-4 font-medium">ID</th>
               <th className="pb-3 pr-4 font-medium">Name</th>
               <th className="pb-3 pr-4 font-medium">Operator</th>
               <th className="pb-3 pr-4 font-medium">Tier</th>
@@ -40,6 +42,9 @@ export function MMProfileList({ profiles, loading }: MMProfileListProps) {
           <tbody>
             {profiles.map((p) => (
               <tr key={p.public_id} className="border-b border-[var(--border-dark)] last:border-0">
+                <td className="py-3 pr-4">
+                  <CopyableId value={p.public_id} />
+                </td>
                 <td className="py-3 pr-4 font-medium text-[var(--text-primary)]">{p.name}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-[var(--text-secondary)]">
                   {truncateAddress(p.operator_address)}

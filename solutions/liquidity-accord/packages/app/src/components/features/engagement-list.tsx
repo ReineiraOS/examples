@@ -1,5 +1,6 @@
 import type { EngagementResponse } from '@/services/EngagementService';
 import { Badge } from '@/components/ui/badge';
+import { CopyableId } from '@/components/ui/copyable-id';
 import { Skeleton } from '@/components/ui/skeleton';
 
 interface EngagementListProps {
@@ -34,6 +35,7 @@ export function EngagementList({ engagements, loading, onSelect }: EngagementLis
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-[var(--border-dark)] text-[var(--text-muted)] uppercase text-xs tracking-wider">
+              <th className="pb-3 pr-4 font-medium">ID</th>
               <th className="pb-3 pr-4 font-medium">Pair</th>
               <th className="pb-3 pr-4 font-medium">Venue</th>
               <th className="pb-3 pr-4 font-medium">Issuer</th>
@@ -49,6 +51,9 @@ export function EngagementList({ engagements, loading, onSelect }: EngagementLis
                 className="border-b border-[var(--border-dark)] last:border-0 cursor-pointer hover:bg-[var(--background-secondary)] transition-colors"
                 onClick={() => onSelect?.(e)}
               >
+                <td className="py-3 pr-4">
+                  <CopyableId value={e.public_id} />
+                </td>
                 <td className="py-3 pr-4 font-medium text-[var(--text-primary)]">{e.pair_symbol}</td>
                 <td className="py-3 pr-4 text-[var(--text-secondary)]">{e.venue}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-[var(--text-secondary)]">

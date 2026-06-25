@@ -23,7 +23,7 @@ async function authenticateWithSiwe(address: string) {
 
   const domain = window.location.host;
   const origin = window.location.origin;
-  const statement = 'Sign in to ReineiraOS';
+  const statement = 'Sign in to Liquidity Accord';
   const message = buildSiweMessage(domain, address, statement, origin, nonce);
 
   const signature = await useWalletStore.getState().signMessage(message);
